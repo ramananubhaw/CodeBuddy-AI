@@ -3,14 +3,14 @@ from model import stream_explanation
 
 st.set_page_config(page_title="CodeBuddy AI", layout="wide")
 
-# st.markdown("""
-#     <style>
-#     textarea[disabled] {
-#         color: white;
-#         font-weight: 500;
-#     }
-#     </style>
-# """, unsafe_allow_html=True)
+st.markdown("""
+    <style>
+    textarea[disabled] {
+        color: white;
+        font-weight: 500;
+    }
+    </style>
+""", unsafe_allow_html=True)
 
 if "generating" not in st.session_state:
     st.session_state.generating = False

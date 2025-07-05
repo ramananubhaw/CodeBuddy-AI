@@ -30,7 +30,7 @@ def explain_code(code: str):
     result["ready"] = True
 
 def stream_explanation(code: str):
-    print("Generating..........")
+    # print("Generating..........")
     thread = threading.Thread(target=explain_code, args=(code, ))
     thread.start()
 
